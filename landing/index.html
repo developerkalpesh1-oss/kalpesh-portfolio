@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Ecosystem Portfolio | MLOps & Product Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.plot.ly/plotly-3.1.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#F0F4FF',
+                            100: '#E0E9FF',
+                            500: '#2563EB',
+                            600: '#1D4ED8',
+                        },
+                        accent: {
+                            green: '#10B981',
+                            coral: '#FF6B6B',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { margin: 0; padding: 0; background: #FFFFFF; color: #1E293B; }
+        ::-webkit-scrollbar { display: none; }
+        .retro-border { border: 2px solid #1E293B; box-shadow: 4px 4px 0 #1E293B; }
+        .retro-hover:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 #1E293B; }
+        .gradient-text { background: linear-gradient(135deg, #2563EB 0%, #10B981 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .grid-pattern { background-image: linear-gradient(#F8FAFC 1px, transparent 1px), linear-gradient(90deg, #F8FAFC 1px, transparent 1px); background-size: 40px 40px; }
+    </style>
+</head>
+<body class="antialiased font-sans">
+
+    <!-- Navigation -->
+    <nav id="header" class="sticky top-0 w-full z-50 bg-white border-b-4 border-black">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-black flex items-center justify-center text-white font-mono font-bold text-xl">
+                    K
+                </div>
+                <div>
+                    <span class="font-bold text-xl tracking-tight text-black font-mono">KALPESH MHASE</span>
+                    <p class="text-xs text-gray-600 font-medium uppercase tracking-wider">MLOps Engineer</p>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-bold text-black uppercase tracking-wide font-mono">
+                <a href="#ecosystem" class="hover:text-brand-500 transition-colors">Systems</a>
+                <a href="#products" class="hover:text-brand-500 transition-colors">Products</a>
+                <a href="#infrastructure" class="hover:text-brand-500 transition-colors">Stack</a>
+            </div>
+            <a href="https://www.instagram.com/developerkalpesh/" target="_blank" class="px-6 py-2 bg-black text-white text-sm font-bold font-mono uppercase retro-border retro-hover transition-all">
+                Connect
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative pt-20 pb-20 overflow-hidden bg-white grid-pattern">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-brand-50 border-2 border-black mb-8 font-mono">
+                        <span class="w-2 h-2 bg-accent-green"></span>
+                        <span class="text-xs font-bold text-black uppercase tracking-wider">Building Systems</span>
+                    </div>
+                    <h1 class="text-5xl lg:text-6xl font-black tracking-tight mb-6 leading-[1.1] text-black font-mono">
+                        INTELLIGENT<br>
+                        <span class="gradient-text">INFRASTRUCTURE</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-10 leading-relaxed max-w-xl font-sans">
+                        End-to-end ML systems architecture. Serverless platforms. Automated workflows. Real-time data pipelines. Production-grade AI infrastructure.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-start gap-4">
+                        <a href="#products" class="px-8 py-4 bg-brand-500 text-white font-bold font-mono uppercase retro-border retro-hover transition-all">
+                            View Work →
+                        </a>
+                        <a href="https://www.goalgeniee.com/" target="_blank" class="px-8 py-4 bg-white text-black border-2 border-black font-bold font-mono uppercase retro-border retro-hover transition-all">
+                            Live Platform ↗
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Creator Photo - Integrated -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative border-4 border-black bg-white p-2 retro-border">
+                        <img class="w-full h-auto object-cover transition-all duration-500" src="assets/kalpesh.png" alt="Kalpesh MHASE MLOps Engineer professional portrait" />
+                        <div class="absolute bottom-6 left-6 right-6 bg-white border-2 border-black p-4">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <h3 class="font-bold text-lg text-black font-mono">KALPESH MHASE</h3>
+                                    <p class="text-xs text-gray-600 font-mono uppercase tracking-wider">Senior MLOps</p>
+                                </div>
+                                <a href="https://www.instagram.com/developerkalpesh/" target="_blank" class="w-10 h-10 bg-black flex items-center justify-center text-white hover:bg-brand-500 transition-colors">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Products -->
+    <section id="products" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16">
+                <h2 class="text-4xl font-black mb-4 text-black font-mono uppercase">Production Systems</h2>
+                <p class="text-gray-600 max-w-2xl text-lg">Real-world ML platforms solving complex problems through intelligent automation and scalable serverless architecture.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- GoalGenie -->
+                <div class="bg-white border-4 border-black p-8 retro-border retro-hover transition-all group">
+                    <div class="w-14 h-14 bg-brand-500 flex items-center justify-center mb-6 border-2 border-black">
+                        <i class="fa-solid fa-bullseye text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-black mb-3 text-black font-mono">GOALGENIE</h3>
+                    <div class="mb-4">
+                        <span class="inline-block px-3 py-1 bg-black text-white text-xs font-bold font-mono uppercase">Firebase</span>
+                        <span class="inline-block px-3 py-1 bg-black text-white text-xs font-bold font-mono uppercase ml-2">ML</span>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6 text-sm">
+                        Serverless goal tracking platform with predictive ML models. Real-time Firebase sync. Behavioral pattern analysis. Progress forecasting engine.
+                    </p>
+                    <a href="https://www.goalgeniee.com/" target="_blank" class="text-sm font-bold text-brand-500 font-mono uppercase flex items-center gap-2">
+                        Launch Platform <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- ApplySathi -->
+                <div class="bg-white border-4 border-black p-8 retro-border retro-hover transition-all group">
+                    <div class="w-14 h-14 bg-accent-green flex items-center justify-center mb-6 border-2 border-black">
+                        <i class="fa-solid fa-briefcase text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-black mb-3 text-black font-mono">APPLYSATHI</h3>
+                    <div class="mb-4">
+                        <span class="inline-block px-3 py-1 bg-black text-white text-xs font-bold font-mono uppercase">Firestore</span>
+                        <span class="inline-block px-3 py-1 bg-black text-white text-xs font-bold font-mono uppercase ml-2">Auto-Apply</span>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6 text-sm">
+                        Automated job application system. Headless browser execution. Resume parsing. Real-time status tracking. Firebase Cloud Functions backend.
+                    </p>
+                    <a href="https://www.applysathi.com/" target="_blank" class="text-sm font-bold text-accent-green font-mono uppercase flex items-center gap-2">
+                        Launch Platform <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Lens2Cart -->
+                <div class="bg-white border-4 border-black p-8 retro-border retro-hover transition-all group">
+                    <div class="w-14 h-14 bg-black flex items-center justify-center mb-6 border-2 border-black">
+                        <i class="fa-solid fa-camera text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-black mb-3 text-black font-mono">LENS2CART</h3>
+                    <div class="mb-4">
+                        <span class="inline-block px-3 py-1 bg-black text-white text-xs font-bold font-mono uppercase">Vision AI</span>
+                        <span class="inline-block px-3 py-1 bg-black text-white text-xs font-bold font-mono uppercase ml-2">Shopify</span>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6 text-sm">
+                        Computer vision-powered e-commerce. Visual product search. Image similarity engine. Shopify integration. Real-time recommendation pipeline.
+                    </p>
+                    <span class="text-sm font-bold text-black font-mono uppercase flex items-center gap-2">
+                        Production Ready <i class="fa-solid fa-check"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infrastructure -->
+    <section id="infrastructure" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-black text-white mb-6 font-mono">
+                        <i class="fa-solid fa-server text-xs"></i>
+                        <span class="text-xs font-semibold uppercase tracking-wider">Backend Stack</span>
+                    </div>
+                    <h2 class="text-3xl lg:text-4xl font-black mb-6 leading-tight font-mono text-black">
+                        CENTRALIZED CRM &<br>PATIENT MANAGEMENT
+                    </h2>
+                    <div class="space-y-6 text-gray-600 leading-relaxed text-sm">
+                        <p>
+                            Production-grade backend infrastructure built for scale. Centralized CRM captures leads from multiple sources, feeding a sophisticated tracking pipeline with real-time Firestore sync.
+                        </p>
+                        <p>
+                            Patient Management System handles complex healthcare workflows: appointment scheduling, secure record management, call log monitoring, and integrated chat assistance.
+                        </p>
+                    </div>
+
+                    <div class="mt-8 space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 bg-brand-500 flex items-center justify-center flex-shrink-0 border-2 border-black">
+                                <i class="fa-solid fa-check text-white text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-black font-mono text-sm mb-1">AUTOMATED LEAD CONVERSION</h4>
+                                <p class="text-xs text-gray-600">Real-time tracking with Firestore listeners and Cloud Functions triggers</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 bg-accent-green flex items-center justify-center flex-shrink-0 border-2 border-black">
+                                <i class="fa-solid fa-check text-white text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-black font-mono text-sm mb-1">INTEGRATED CHAT ASSISTANT</h4>
+                                <p class="text-xs text-gray-600">Natural language interface with Firestore data access and real-time updates</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 bg-black flex items-center justify-center flex-shrink-0 border-2 border-black">
+                                <i class="fa-solid fa-check text-white text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-black font-mono text-sm mb-1">REAL-TIME REVENUE ANALYTICS</h4>
+                                <p class="text-xs text-gray-600">Live dashboard with Firestore aggregation and Cloud Functions processing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dashboard Mockup UI -->
+                <div class="bg-white rounded-[20px] shadow-soft border border-gray-100 p-6 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-500 to-blue-500"></div>
+                    
+                    <div class="flex items-center justify-between mb-8">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Revenue & Insights</h4>
+                            <p class="text-xs text-gray-500">Live system metrics</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <span class="px-2 py-1 bg-gray-100 rounded text-xs font-medium text-gray-600">30 Days</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="p-4 rounded-xl border border-gray-100 bg-gray-50/50">
+                            <p class="text-xs text-gray-500 mb-1">Total Leads</p>
+                            <p class="text-2xl font-bold text-gray-900">2,451</p>
+                            <p class="text-xs text-brand-600 mt-1"><i class="fa-solid fa-arrow-up"></i> 12.5%</p>
+                        </div>
+                        <div class="p-4 rounded-xl border border-gray-100 bg-gray-50/50">
+                            <p class="text-xs text-gray-500 mb-1">Conversion Rate</p>
+                            <p class="text-2xl font-bold text-gray-900">18.2%</p>
+                            <p class="text-xs text-brand-600 mt-1"><i class="fa-solid fa-arrow-up"></i> 3.1%</p>
+                        </div>
+                    </div>
+
+                    <div class="h-[200px] w-full" id="revenueChart"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Autonomous Agents -->
+    <section id="agents" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16 text-center">
+                <h2 class="text-3xl font-bold mb-4">Autonomous Automation</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">Deploying AI agents to handle cognitive workflows, from content generation to codebase management.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- OpenClaw -->
+                <div class="glass-card rounded-[20px] p-8 border border-gray-200">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-xl bg-gray-900 flex items-center justify-center shadow-md">
+                            <i class="fa-brands fa-discord text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">OpenClaw Agents</h3>
+                            <p class="text-sm text-gray-500">Discord-integrated Task Automation</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-8">
+                        A fleet of specialized AI agents running via Discord. These agents autonomously manage to-do lists, aggregate daily news, suggest YouTube content, and draft scripts. The coding agent utilizes RAG and vectorization to build and query a personalized knowledge base, drastically reducing context switching.
+                    </p>
+                    
+                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-100 space-y-3 font-mono text-xs">
+                        <div class="flex gap-2 text-gray-600">
+                            <span class="text-brand-500">@DevAgent</span>
+                            <span>Vectorizing documentation for goalgenie-core...</span>
+                        </div>
+                        <div class="flex gap-2 text-gray-600">
+                            <span class="text-blue-500">@ContentAgent</span>
+                            <span>Drafted 3 new scripts based on trending MLOps topics.</span>
+                        </div>
+                        <div class="flex gap-2 text-gray-600">
+                            <span class="text-purple-500">@TaskAgent</span>
+                            <span>Updated daily briefing. 4 high-priority PRs pending.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Avatar Automation -->
+                <div class="glass-card rounded-[20px] p-8 border border-gray-200">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-xl bg-pink-50 flex items-center justify-center border border-pink-100">
+                            <i class="fa-solid fa-video text-pink-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Avatar Content Gen</h3>
+                            <p class="text-sm text-gray-500">Scalable Video Production</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-8">
+                        Eliminating the bottleneck of manual filming through AI Avatar Content Automation. The system takes text scripts generated by OpenClaw and synthesizes high-quality video content using a cloned digital avatar, maintaining consistent branding while scaling output exponentially.
+                    </p>
+
+                    <div class="grid grid-cols-3 gap-3">
+                        <div class="aspect-video bg-gray-100 rounded-lg flex items-center justify-center border border-gray-200">
+                            <i class="fa-solid fa-play text-gray-400"></i>
+                        </div>
+                        <div class="aspect-video bg-gray-100 rounded-lg flex items-center justify-center border border-gray-200">
+                            <i class="fa-solid fa-play text-gray-400"></i>
+                        </div>
+                        <div class="aspect-video bg-gray-100 rounded-lg flex items-center justify-center border border-gray-200 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-gray-900/10 backdrop-blur-[2px] flex items-center justify-center">
+                                <span class="text-[10px] font-bold bg-white px-2 py-1 rounded shadow-sm">Processing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <footer id="footer" class="bg-surface-900 text-white py-20 border-t border-surface-800">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold mb-6">Let's Build Together</h2>
+            <p class="text-slate-400 mb-10 max-w-xl mx-auto text-lg">
+                Ready to architect intelligent systems that scale? Let's discuss your next AI-powered product.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="https://www.instagram.com/developerkalpesh/" target="_blank" class="px-8 py-4 bg-brand-500 text-white font-bold rounded-xl hover:bg-brand-600 transition-all shadow-lg flex items-center gap-2">
+                    <i class="fa-brands fa-instagram"></i> Connect on Instagram
+                </a>
+            </div>
+            
+                <div class="mt-20 pt-8 border-t border-surface-800 text-sm text-slate-500 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p>&copy; 2026 Kalpesh MHASE. All rights reserved.</p>
+                <div class="flex gap-6 font-medium">
+                    <a href="https://www.goalgeniee.com/" class="hover:text-white transition-colors">GoalGenie</a>
+                    <a href="https://www.applysathi.com/" class="hover:text-white transition-colors">ApplySathi</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function initializeCharts() {
+            try {
+                const revenueData = [{
+                    x: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                    y: [120, 150, 180, 220, 280, 350],
+                    type: 'scatter',
+                    mode: 'lines',
+                    fill: 'tozeroy',
+                    line: {
+                        color: '#2563EB',
+                        width: 3,
+                        shape: 'spline',
+                        smoothing: 1.3
+                    },
+                    fillcolor: 'rgba(37, 99, 235, 0.1)'
+                }];
+
+                const layout = {
+                    margin: { t: 10, r: 10, b: 30, l: 30 },
+                    paper_bgcolor: 'transparent',
+                    plot_bgcolor: 'transparent',
+                    showlegend: false,
+                    xaxis: {
+                        showgrid: false,
+                        fixedrange: true,
+                        tickfont: { color: '#9ca3af', size: 10 }
+                    },
+                    yaxis: {
+                        showgrid: true,
+                        gridcolor: 'rgba(229, 231, 235, 0.5)',
+                        fixedrange: true,
+                        tickfont: { color: '#9ca3af', size: 10 }
+                    }
+                };
+
+                const config = { responsive: true, displayModeBar: false };
+                
+                if(document.getElementById('revenueChart')) {
+                    Plotly.newPlot('revenueChart', revenueData, layout, config);
+                }
+            } catch(e) {
+                console.error("Chart initialization failed", e);
+            }
+        }
+
+        window.addEventListener('load', initializeCharts);
+        setTimeout(initializeCharts, 1200);
+    </script>
+</body>
+</html>
