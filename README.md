@@ -6,7 +6,7 @@ How to run:
 
 1. Open a terminal and change directory:
 
-```bash
+```bash 
 cd "C:\Users\91963\Desktop\kalpesh\landing"
 ```
 
